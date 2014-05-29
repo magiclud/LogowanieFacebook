@@ -27,9 +27,7 @@
 				</div>
 				<br/>
 				<a href="./logout">
-					<div id="logout">
 						Logout
-					</div>
 				</a>				
 			</div>
 		</div>

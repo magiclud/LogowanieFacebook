@@ -12,6 +12,7 @@ public class LoginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	String callbackURL = null;
+    	request.getSession().invalidate();
     	String additionalPermissions = getServletContext().getInitParameter("additionalPermissions");
     	
         try {
