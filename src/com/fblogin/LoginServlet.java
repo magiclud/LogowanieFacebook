@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
             String authURL = "https://graph.facebook.com/oauth/authorize?client_id=" + facebookAppId + 
             		"&redirect_uri=" + callbackURL + "&scope=" + additionalPermissions;
             System.out.println("authURL: " + authURL);
-            
+
             response.sendRedirect(authURL);
 
         } catch (Exception e) {

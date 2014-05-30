@@ -69,7 +69,7 @@ public class CallbackServlet extends HttpServlet {
 					.append("/callback");
 			redirectURL = URLEncoder.encode(redirectURLbuffer.toString(),
 					"UTF-8");
-
+System.out.println("RedirectURL: "+ redirectURL);
 			code = request.getParameter("code");
 			if (null != code) {
 				System.out.println("Code: " + code);
